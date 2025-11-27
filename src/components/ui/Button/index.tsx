@@ -1,10 +1,6 @@
-import { type ButtonHTMLAttributes, forwardRef } from 'react';
-import { cn } from '../../utils/cn';
-
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
-  size?: 'sm' | 'md' | 'lg';
-}
+import { forwardRef } from 'react';
+import { cn } from '../../../utils/cn';
+import type { ButtonProps } from './types';
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = 'primary', size = 'md', ...props }, ref) => {
