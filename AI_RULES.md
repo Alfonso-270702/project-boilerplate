@@ -40,10 +40,10 @@ This project uses **Zustand** for global state management.
 
 ## 5. Reusable Components
 
-When creating reusable components (in `src/components`), follow this folder structure for easier debugging:
+When creating reusable components (in `src/components`), place them inside the `ui` folder and follow this structure:
 
 ```text
-src/components/<ComponentName>/
+src/components/ui/<ComponentName>/
 ├── index.tsx        # Component logic and UI
 └── types.ts         # Component prop types
 ```

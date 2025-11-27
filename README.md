@@ -35,19 +35,34 @@ A robust, modern boilerplate for company projects.
 ```
 src/
 ├── assets/         # Static assets
-├── components/     # Shared UI components
-│   ├── ui/         # Generic UI components (Button, Input)
-│   └── layout/     # Layout components (Header, Sidebar)
+├── components/     # Shared UI components (Reusable)
+│   ├── ui/         # Generic UI components
+│   │   └── <ComponentName>/ # Folder with index.tsx & types.ts (e.g., Button, Input)
+│   └── layout/     # Layout components (Header, Sidebar) - Folder structure with index.tsx & types.ts
 ├── features/       # Feature-based modules
+│   └── <feature>/  # Feature specific code
+│       ├── components/ # Feature specific components
+│       ├── hooks/      # Feature specific hooks
+│       └── types/      # Feature specific types
 ├── hooks/          # Global hooks
 ├── lib/            # Third-party library configurations (axios)
 ├── pages/          # Route pages
-├── stores/         # Global state stores
+├── stores/         # Global state stores (Zustand)
 ├── styles/         # Global styles
 ├── types/          # Global TypeScript types
 ├── utils/          # Helper functions
 ├── App.tsx
 └── main.tsx
+```
+
+## AI Rules
+
+This project follows strict architectural rules defined in `AI_RULES.md`. All contributors (human and AI) must adhere to:
+
+1.  **Feature-Based Architecture**: Business logic lives in `src/features`.
+2.  **Global State**: All Zustand stores live in `src/stores`.
+3.  **Component Structure**: Reusable components must have their own folder with `index.tsx` and `types.ts`.
+4.  **Syntax**: Use ES6 arrow functions.
 ```
 
 ## Scripts
