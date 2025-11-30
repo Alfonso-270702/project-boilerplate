@@ -58,7 +58,12 @@ src/components/ui/<ComponentName>/
   // Incorrect
   function MyComponent() { ... }
   ```
-- **Styling**: Use **Tailwind CSS** and the `cn()` utility for conditional classes.
+- **Styling**: Use **Tailwind CSS** and the `cn()` utility from `src/utils/cn` for conditional classes.
+
+## 8. Utilities
+
+- **Global Utils**: Place reusable utility functions in `src/utils`.
+- **No Lib Folder**: Do not create a `src/lib` folder. Use `src/utils` instead.
 
 ## 7. Environment Variables
 

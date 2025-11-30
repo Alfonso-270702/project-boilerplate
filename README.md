@@ -45,7 +45,6 @@ src/
 │       ├── hooks/      # Feature specific hooks
 │       └── types/      # Feature specific types
 ├── hooks/          # Global hooks
-├── lib/            # Third-party library configurations (axios)
 ├── pages/          # Route pages
 ├── stores/         # Global state stores (Zustand)
 ├── styles/         # Global styles
